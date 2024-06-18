@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:  url('../Netflix-Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 8px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+}
+
+.nav-links{
+   height: 80px;
+   line-height: 50px;
+   list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+   position: relative;
+   padding: 0 5px;
+
+}
+.nav-links  li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: #db0001;
+    border-radius: 5px;
+    padding: 7px 8px;
+    font: small-caption;
+}
+.nav-links li a:hover{
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+#movie-details{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: 55px;
+    margin-right: -10px;
+
+}
+button{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+/*-----------features-----------*/
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    #movie-details{
+       padding: 10px;
+       margin-top: 75px;
+       margin-left: 20px;
+       margin-right: -10px;
+    }
+}
